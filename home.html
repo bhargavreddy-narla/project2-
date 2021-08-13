@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2649fd799.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="stylesheet/home.css" type="text/css" rel="stylesheet" />
+    <script></script>
+  </head>
+  <body>
+    <!--Header starts-->
+    <div class="container-fluid">
+      <div class="row header">
+        <!--header left media-->
+        <div class="col-sm-5 header--leftMedia">
+          <h6>Follow us on social media</h6>
+          <a href="https://www.facebook.com" target="blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.twitter.com" target="blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://www.instagram" target="blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com" target="blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+        <div class="col-sm-3"></div>
+        <!--header right media-->
+        <div class="col-sm-4 header--rightMedia">
+          <a href="#">Privacy policy</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <!--header ends-->
+    <!--navbar starts-->
+    <div class="container-fixed">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="bar">
+          <a class="navbar-brand" href="#"><h4>Medicare<br><h5>Hospitals</h5></h4></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--search bar-->
+                <form class="form-inline search--bar">
+                  <input
+                    type="text"
+                    name=""
+                    value=""
+                    class="form-control"
+                    placeholder="Search"
+                  />
+                  <button type="submit" class="btn btn-secondary">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              <!--search bar ends-->
+              <!--home-->
+              <li class="nav-item active">
+                <a class="nav-link" href="#" id="nav">HOME</a>
+              </li>
+              <!--home ends-->
+              <!--about-->
+              <li class="nav-item ">
+                  <a class="nav-link" href="#" id="nav">ABOUT US</a>
+                </li>
+              <!--about end-->
+              <!--contact-->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="nav">CONTACT US</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" target="blank">Post a Query</a>
+                    <a class="dropdown-item" href="#" target="blank">Book Physical Appointment</a>
+                  </div>
+                </li>
+              <!--contact ends-->
+              <!--Doctor-->
+              <li class="nav-item">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                       href="#" role="button" id="nav">
+                       DOCTOR </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="list of patients.html" target="blank">List of patients</a>
+                      <a class="dropdown-item" href="my patients.html" target="blank">My Patients</a>
+                      <a class="dropdown-item" href="add new patient.html" target="blank">Add new patient</a>
+                    </div>
+                  </li>
+            </li>
+            <!--Doctor ends-->
+             <!--patient-->
+             <li class="nav-item">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                     href="#" role="button" id="nav">
+                     PATIENT </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="list of doctors.html" target="blank">List of Doctors</a>
+                    <a class="dropdown-item" href="shortlisted doctors.html" target="blank">Shortlisted Doctors</a>
+                    <a class="dropdown-item" href="single doctor page.html" target="blank">Single Doctor</a>
+                  </div>
+                </li>
+          </li>
+          <!--patients ends-->
+              <!--sign in-->
+              <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         href="#" role="button" aria-haspopup="true" aria-expanded="false" id="nav">
+                         SIGN IN</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Doctor sign in.html" target="blank">Doctor</a>
+                        <a class="dropdown-item" href="patient login.html" target="blank">Patient</a>
+                      </div>
+                    </li>
+              </li>
+              <!--login ends-->
+              <!--sign up-->
+              <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         href="#" role="button" id="nav">
+                         SIGN UP </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Doctor sign up.html" target="blank">Doctor</a>
+                        <a class="dropdown-item" href="patient signup page.html" target="blank">Patient</a>
+                      </div>
+                    </li>
+              </li>
+              <!--sign-up ends-->
+            </ul> 
+          </div>
+        </nav>
+    <!--navbar ends-->
+    <!--carousel starts-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 carousel">
+          <div
+            id="mycarousel"
+            class="carousel slide bg-inverse w-100 ml-auto mr-auto"
+            data-ride="carousel"
+          >
+            <!--indicators-->
+            <ul class="carousel-indicators">
+              <li
+                data-target="#mycarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#mycarousel" data-slide-to="1"></li>
+            </ul>
+            <!--slideshow-->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#">
+                  <img
+                    src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/04/instituteexpertises.jpg"
+                    height="700px"
+                    width="100%"
+                /></a>
+                <div class="carousel-caption">
+                  <h2 style="color: tomato">Hospitals are About to Heal</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a
+                  ><img
+                    src="https://indiamedtoday.com/wp-content/uploads/2018/12/1.jpg"
+                    height="700px"
+                    width="100%"
+                /></a>
+                <div class="carousel-caption">
+                  <h2 style="color: tomato">Passion for Caring</h2>
+                </div>
+              </div>
+            </div>
+            <!--left & right controls-->
+            <a
+              class="carousel-control-prev"
+              href="#mycarousel"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#mycarousel"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--navbar2 starts-->
+    <div class="container">
+      <div class="row navbar2 mt-3">
+        <div class="col-sm-12 navbar2--buttons">
+          <a
+            href="stylesheet/book appointment.html"
+            target="blank"
+            class="btn btn-success"
+            ><img
+              src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets/images/book-appointment.svg"
+            /><br />BOOK APPOINTMENT</a
+          >
+          <a href="buy medicine.html" target="blank" class="btn btn-success"
+            ><img
+              src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets/images/buy-medicine.svg"
+            /><br />BUY MEDICINE</a
+          >
+          <a
+            href="stylesheet/lab test.html"
+            target="blank"
+            class="btn btn-success"
+            ><img
+              src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets/images/book-lab-test.svg"
+            /><br />BOOK LAB TEST</a
+          >
+          <a
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488703.9385479233!2d79.93441525365193!3d16.875918298392754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3502fead92b95d%3A0xcbbebcf70cdd6b48!2sMedicare%20Hospital!5e0!3m2!1sen!2sin!4v1628605699900!5m2!1sen!2sin"
+            target="blank"
+            class="btn btn-success"
+            ><img
+              src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets/images/find-hospital.svg"
+            /><br />FIND HOSPITAL</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--navbar2 ends-->
+    <!--About our hospital-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 mt-3 aboutHospital--img">
+          <img
+            src="https://media.istockphoto.com/photos/indian-male-doctor-picture-id177373093?k=6&m=177373093&s=612x612&w=0&h=_NNYxA7b2YR3MsxSs3s7sL4f-S5Ks-2l3ijbR1hv1wU="
+            width="100%"
+          />
+        </div>
+        <div class="col-sm-6 mt-3 aboutHospital--details">
+          <h1>Who we are?</h1>
+          <p>
+            <strong>Medicare Hospitals</strong> was established by Dr Harsha
+            Vardhan in 2010, we has a robust presence across the healthcare
+            ecosystem. From routine wellness & preventive health care to
+            innovative life-saving treatments and diagnostic services.
+          </p>
+          <h3>4,000+ healing hands</h3>
+          <p>
+            Largest network of the finest and brightest medical experts who
+            provide compassionate care using outstanding expertise and advanced
+            technology.
+          </p>
+          <h3>2000+ Pharmacies</h3>
+          <p>
+            Medicare Pharmacy is one of the India’s largest and most trusted
+            branded pharmacy network, with over 2000 plus outlets covering the
+            entire nation.
+          </p>
+          <h3>Best clinical outcomes</h3>
+          <p>
+            Leveraging its vast medical expertise & technological advantage,
+            Medicare Hospitals has consistently delivered best in class clinical
+            outcomes.
+          </p>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!--About doctors-->
+    <div class="container">
+      <div class="row">
+        <!--Doctor1-->
+        <div class="col-sm-6 doctor1--details">
+          <h2>Dr Harsha Vardhan</h2>
+          <h4>Neurologist</h4>
+          <ul>
+            <li>Stroke</li>
+            <li>Multiple Sceloris</li>
+            <li>Headache</li>
+            <li>Parkinson Disease</li>
+            <li>Brain Tumors</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 doctor1--img">
+          <img
+            src="https://media.istockphoto.com/photos/indian-male-doctor-picture-id177373093?k=6&m=177373093&s=612x612&w=0&h=_NNYxA7b2YR3MsxSs3s7sL4f-S5Ks-2l3ijbR1hv1wU="
+            width="100%"
+            height="300px"
+          />
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!--Doctor 2-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 doctor2--img">
+          <img
+            src="https://thumbs.dreamstime.com/b/confident-young-adult-indian-female-doctor-gp-wear-white-coat-stethoscope-looking-camera-standing-arms-crossed-medical-191740547.jpg"
+            width="100%"
+            height="300px"
+          />
+        </div>
+        <div class="col-sm-6 doctor2--details">
+          <h2>Dr Mounika</h2>
+          <h4>ENT</h4>
+          <ul>
+            <li>Tinnitus in ears</li>
+            <li>Dizziness</li>
+            <li>Hearing or Sense of smell</li>
+            <li>Thyroid</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <!--Doctor 3-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 doctor3--details">
+          <h2>Dr Bharath</h2>
+          <h4>Cardiologist</h4>
+          <ul>
+            <li>Heart attacks</li>
+            <li>Heart failure</li>
+            <li>High Blood Pressure</li>
+            <li>Chest pain</li>
+            <li>Arrhythmia</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 doctor3--img">
+          <img
+            src="https://thumbs.dreamstime.com/b/portrait-happy-young-handsome-indian-man-doctor-smiling-studio-shot-against-white-background-137823661.jpg"
+            width="100%"
+            height="300px"
+          />
+        </div>
+      </div>
+      <hr />
+    </div>
+    <!--Hospital locations-->
+    <div class="container">
+      <div class="row location">
+        <div class="col-sm-5 hospitalLocation--img">
+          <img
+            src="https://www.lifewire.com/thmb/8i_QSIuHkv2XgxW9qwHiB7FBJ7o=/1473x1105/smart/filters:no_upscale()/Maplocation_-5a492a4e482c52003601ea25.jpg"
+            width="100%"
+            height="600px"
+          />
+        </div>
+        <!--map location-->
+        <div class="col-sm-7 hospitalLocation--content">
+          <h4 class="text-secondary">Locations In</h4>
+          <h3>India</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488703.9385479233!2d79.93441525365193!3d16.875918298392754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3502fead92b95d%3A0xcbbebcf70cdd6b48!2sMedicare%20Hospital!5e0!3m2!1sen!2sin!4v1628605699900!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <!--area locations-->
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Hyderabad</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Vijayawada</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Vishakapatnam</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Chennai</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Banglore</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Pune</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Kolkata</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Delhi</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Vadodara</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>Patna</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>madurai</a>
+          <a href="#"
+            ><i class="fas fa-map-marker-alt"></i>Thiruvunanthapuram</a
+          >
+          <a href="#" class="btn btn-info">FIND YOUR NEAREST LOCATION</a>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <!--About Transpalnt-->
+    <div class="container transplant--recruitment">
+      <div class="row">
+        <div class="col-sm-6 transplant--content">
+          <h2 class="mt-3">Transplant Disclaimer</h2>
+          <img
+            class="mt-3"
+            src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/02/transplant-disclaimer-min.png"
+            width="100%"
+          />
+          <p class="mt-3">
+            It has been brought to our notice that some people have received
+            emails purporting to offer money for kidney donation and misusing
+            the name of Medicare Hospitals. The public in general and kidney
+            patients in particular are hereby cautioned that these are fake
+            phishing emails and that these mails are neither sent by Medicare
+            Hospitals nor is Medicare Hospitals involved in any such scheme.
+            These fraudulent and suspicious emails are only a scheme to extract
+            payments from gullible individuals by misleading them using the
+            names of reputed hospitals......
+          </p>
+          <a href="https://www.wikipedia.com" target="blank"
+            >Know more <i class="fas fa-arrow-circle-right"></i
+          ></a>
+        </div>
+        <!--About recruitment-->
+        <div class="col-sm-6 recruitment--content">
+          <h2 class="mt-3">Recruitment Disclaimer</h2>
+          <img
+            class="mt-3"
+            src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/02/recruitment-disclaimer-min.png"
+            width="100%"
+          />
+          <p class="mt-3">
+            Medicare Hospitals Enterprise Limited brings to your attention that
+            persons not authorized by the Company are circulating/posting fake
+            advertisements inviting applications from candidates for employment
+            in the Company through e-mails and on leading job portals. Such
+            advertisements demanding payments through various online platforms
+            and portals in exchange for appointments for interviews and offer
+            letters are fraudulent and the Company categorically states that it
+            does not entertain such practices in its recruitment process......
+          </p>
+          <a href="https://www.wikipedia.com" target="blank"
+            >Know more <i class="fas fa-arrow-circle-right"></i
+          ></a>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!--chatbot starts-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-center chatbot-heading">Chatbot</h1>
+          <div class="chat-container" id="chatContainer"></div>
+          <div class="d-flex flex-row justify-content-end">
+            <img
+              class="image"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/chatbot-boy-img.png"
+            />
+          </div>
+          <div class="d-flex flex-row justify-content-center fixed-bottom">
+            <input class="user-input" id="userInput" />
+            <button class="send-msg-btn" id="sendMsgBtn" onclick="sendMsgBtn()">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--chatbot ends-->
+
+<!-- chatbot javascript starts-->
+    <script type="text/javascript">
+      let chatbotMsgList = [
+        "Hi",
+        "Hey",
+        "How can I help you?",
+        "Need an Appointment",
+        "Consult A Doctor",
+        "Can you tell me your problem",
+        "Can you give feedback",
+        "Thank You",
+      ];
+      let userInputE1 = document.getElementById("userInput");
+
+      let chatContainerE1 = document.getElementById("chatContainer");
+
+      function sendMsgBtn() {
+        let messageContainerE2 = document.createElement("div");
+        messageContainerE2.classList.add("msg-to-chatbot-container");
+        chatContainerE1.appendChild(messageContainerE2);
+
+        let paragraphE1 = document.createElement("span");
+        paragraphE1.textContent = userInputE1.value;
+        paragraphE1.classList.add("msg-to-chatbot");
+        messageContainerE2.appendChild(paragraphE1);
+        userInputE1.value = "";
+        getReplyfromChatBot();
+      }
+
+      function getReplyfromChatBot() {
+        let noOfChatBotMsgs = chatbotMsgList.length;
+        let chatBotContet =
+          chatbotMsgList[Math.ceil(Math.random() * noOfChatBotMsgs) - 1];
+
+        let messageContainerE1 = document.createElement("div");
+        messageContainerE1.classList.add("msg-from-chatbot-container");
+        chatContainerE1.appendChild(messageContainerE1);
+
+        let paragraphE2 = document.createElement("span");
+        paragraphE2.textContent = chatBotContet;
+        paragraphE2.classList.add("msg-from-chatbot");
+        messageContainerE1.appendChild(paragraphE2);
+      }
+    </script>
+    <!--chatbot javascript ends-->
+  </script>
+
+    <!--footer1-->
+    <div class="container-fluid">
+      <div class="row footer1">
+        <!--footer left-->
+        <div class="col-sm-3 footer1--column1">
+          <h4>Patient care</h4>
+          <a href="#">Find a Doctor</a>
+          <a href="#">Medical Services</a>
+          <a href="#">Value added services</a>
+          <a href="#">Pay online</a>
+        </div>
+        <!--footer middle1-->
+        <div class="col-sm-3 footer1--column2">
+          <h4>Centers of Excellence</h4>
+          <a href="#">Neurology & Nuerosurgery</a>
+          <a href="#">Spine surgery</a>
+          <a href="#">Robotic surgery</a>
+          <a href="#">Cardiology</a>
+          <a href="#">Orthopaedics</a>
+          <a href="#">Organ Transplantation</a>
+          <a href="#">Emergency Care</a>
+        </div>
+        <!--footer middle2-->
+        <div class="col-sm-3 footer1--column3">
+          <h4>Medical Procedures</h4>
+          <a href="#">Treatment</a>
+          <a href="#">scan</a>
+          <a href="#">Surgery</a>
+          <a href="#">Bone marrow transplant</a>
+          <a href="#">Cosmetic and plastic</a>
+        </div>
+        <!--footer right-->
+        <div class="col-sm-3 footer1--column4">
+          <h4>Contact Us</h4>
+          <a href="#">Post A Query</a>
+          <a href="#">Book physical Appointment</a>
+          <a href="#">Give your feedback</a>
+        </div>
+      </div>
+    </div>
+    <!--footer2-->
+    <div class="container-fluid">
+      <div class="row footer2">
+        <div class="col-sm-4 footer2--icons">
+          <a href="https://www.facebook.com" target="blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.twitter.com" target="blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://www.instagram" target="blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com" target="blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+        <div class="col-sm-4 footer2--content">
+          <a href="#">Privacy policy</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col-sm-4 footer2--mail">
+          <a href="https://www.gmail.com">medicarehospitals@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

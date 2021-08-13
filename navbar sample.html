@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navbar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2649fd799.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+     
+       .navbar-brand a h4,h5{
+           color:red;
+           margin-top: -1rem;
+           
+       }
+      .nav-item  a{
+          margin-left: 3rem;
+      }
+      button{
+        margin-left: -1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fixed">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="bar">
+            <a class="navbar-brand" href="#"><h4>Medicare<br><h5>Hospitals</h5></h4></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <!--search bar-->
+                <form class="form-inline">
+                  <input
+                    type="text"
+                    name=""
+                    value=""
+                    class="form-control"
+                    placeholder="Search"
+                  />
+                  <button type="submit" class="btn btn-secondary">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+                 <!--search bar ends-->
+                <!--home-->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" id="nav">HOME</a>
+                </li>
+                <!--home ends-->
+                <!--about-->
+                <li class="nav-item ">
+                    <a class="nav-link" href="#" id="nav">ABOUT US</a>
+                  </li>
+                <!--about end-->
+
+                <!--contact-->
+                <li class="nav-item ">
+                    <a class="nav-link" href="#" id="nav">CONTACT US</a>
+                  </li>
+                <!--contact ends-->
+                <!--Doctor-->
+                <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         href="#" role="button" id="nav">
+                         DOCTOR </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="list of patients.html" target="blank">List of patients</a>
+                        <a class="dropdown-item" href="my patients.html" target="blank">My Patients</a>
+                        <a class="dropdown-item" href="add new patient.html" target="blank">Add new patient</a>
+                      </div>
+                    </li>
+              </li>
+              <!--Doctor ends-->
+              <!--patient-->
+              <li class="nav-item">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                       href="#" role="button" id="nav">
+                       PATIENT </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="list of doctors.html" target="blank">List of Doctors</a>
+                      <a class="dropdown-item" href="shortlisted doctors.html" target="blank">Shortlisted Doctors</a>
+                      <a class="dropdown-item" href="single doctor page.html" target="blank">Single Doctor</a>
+                    </div>
+                  </li>
+            </li>
+            <!--patients ends-->
+                <!--login-->
+                <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                           href="#" role="button" aria-haspopup="true" aria-expanded="false" id="nav">
+                           SIGN IN</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="Doctor sign in.html" target="blank">Doctor</a>
+                          <a class="dropdown-item" href="patient login.html" target="blank">Patient</a>
+                        </div>
+                      </li>
+                </li>
+                <!--login ends-->
+                <!--sign up-->
+                <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                           href="#" role="button" id="nav">
+                           SIGN UP </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="Doctor sign up.html" target="blank">Doctor</a>
+                          <a class="dropdown-item" href="patient signup page.html" target="blank">Patient</a>
+                        </div>
+                      </li>
+                </li>
+                <!--sign-up ends-->
+              </ul> 
+            </div>
+          </nav>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

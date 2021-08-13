@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of patients</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2649fd799.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .header--main h1 {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+      }
+
+      .table--header--headings {
+        background-color: pink;
+      }
+      .table--header--headings--items {
+        padding: 1rem;
+        text-transform: uppercase;
+      }
+
+      .table--body--content td {
+        background-color: #ebf5fb;
+        text-align: center;
+        padding: 0.5rem;
+      }
+
+      /*navbar*/
+      .navbar-brand a h4,
+      h5 {
+        color: red;
+        margin-top: -1rem;
+      }
+      .nav-item a {
+        margin-left: 3rem;
+      }
+
+      .search--bar {
+        margin-left: 4rem;
+      }
+      button {
+        margin-left: -1rem;
+      }
+
+      /*footer*/
+      .footer1 {
+        background-color: black;
+      }
+      .footer1 h4 {
+        color: #edbb99;
+      }
+
+      .footer1--column1 a {
+        color: white;
+        display: block;
+        text-decoration: none;
+      }
+      .footer1--column1 a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+      .footer1--column2 a {
+        color: white;
+        display: block;
+        text-decoration: none;
+      }
+      .footer1--column2 a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+      .footer1--column3 a {
+        color: white;
+        display: block;
+        text-decoration: none;
+      }
+      .footer1--column3 a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+      .footer1--column4 a {
+        color: white;
+        display: block;
+        text-decoration: none;
+      }
+      .footer1--column4 a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+
+      .footer2 {
+        background-color: skyblue;
+      }
+      .footer2--icons a {
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        float: left;
+        text-decoration: none;
+      }
+      .footer2--icons a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+      .footer2--content a {
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        float: left;
+        text-decoration: none;
+      }
+      .footer2--content a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+
+      .footer2--mail a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+        float: right;
+      }
+      .footer2--mail a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+       <!--navbar starts-->
+    <div class="container-fixed">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="bar">
+          <a class="navbar-brand" href="#"><h4>Medicare<br><h5>Hospitals</h5></h4></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--search bar-->
+              <form class="form-inline search--bar">
+                <input
+                  type="text"
+                  name=""
+                  value=""
+                  class="form-control"
+                  placeholder="Search"
+                />
+                <button type="submit" class="btn btn-secondary">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+                <!--search bar ends-->
+              <!--home-->
+              <li class="nav-item active">
+                <a class="nav-link" href="#" id="nav">HOME</a>
+              </li>
+              <!--home ends-->
+              <!--about-->
+              <li class="nav-item ">
+                  <a class="nav-link" href="#" id="nav">ABOUT US</a>
+                </li>
+              <!--about end-->
+              <!--contact-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="nav">CONTACT US</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" target="blank">Post a Query</a>
+                  <a class="dropdown-item" href="#" target="blank">Book Physical Appointment</a>
+                </div>
+              </li>
+            <!--contact ends-->
+             <!--Doctor-->
+             <li class="nav-item">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                     href="#" role="button" id="nav">
+                     DOCTOR </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="list of patients.html" target="blank">List of patients</a>
+                    <a class="dropdown-item" href="my patients.html" target="blank">My Patients</a>
+                    <a class="dropdown-item" href="add new patient.html" target="blank">Add new patient</a>
+                  </div>
+                </li>
+          </li>
+          <!--Doctor ends-->
+          <!--patient-->
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="#" role="button" id="nav">
+                   PATIENT </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="list of doctors.html" target="blank">List of Doctors</a>
+                  <a class="dropdown-item" href="shortlisted doctors.html" target="blank">Shortlisted Doctors</a>
+                  <a class="dropdown-item" href="single doctor page.html" target="blank">Single Doctor</a>
+                </div>
+              </li>
+        </li>
+        <!--patients ends-->
+              <!--login-->
+              <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         href="#" role="button" aria-haspopup="true" aria-expanded="false" id="nav">
+                         SIGN IN</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Doctor sign in.html" target="blank">Doctor</a>
+                        <a class="dropdown-item" href="patient login.html" target="blank">Patient</a>
+                      </div>
+                    </li>
+              </li>
+              <!--login ends-->
+              <!--sign up-->
+              <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         href="#" role="button" id="nav">
+                         SIGN UP </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Doctor sign up.html" target="blank">Doctor</a>
+                        <a class="dropdown-item" href="patient signup page.html" target="blank">Patient</a>
+                      </div>
+                    </li>
+              </li>
+              <!--sign-up ends-->
+            </ul> 
+          </div>
+        </nav>
+        <!--navbar--ends-->
+        <!--list of patients-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 header--main">
+          <!--heading-->
+          <h1 style="text-align: center" class="mt-3">LIST OF PATIENTS</h1>
+        </div>
+        <div class="col-sm-12">
+          <table border="2px">
+            <div class="table--header">
+              <!--table headings-->
+              <tr class="table--header--headings">
+                <th class="table--header--headings--items">S.No</th>
+                <th class="table--header--headings--items">DATE</th>
+                <th class="table--header--headings--items">OP NO</th>
+                <th class="table--header--headings--items">Patient Name</th>
+                <th class="table--header--headings--items">Age</th>
+                <th class="table--header--headings--items">Sex</th>
+                <th class="table--header--headings--items">Ref.Physician</th>
+                <th class="table--header--headings--items">Physician Name</th>
+                <th class="table--header--headings--items">Appointment Time</th>
+              </tr>
+            </div>
+            <div class="table--body">
+              <!--row1-->
+              <tr class="table--body--content">
+                <td>1</td>
+                <td>05/08/2021</td>
+                <td>rec-000037</td>
+                <td>Sainath</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>PHY--015</td>
+                <td>Dr.Harsha Vardhan</td>
+                <td>10:00 AM</td>
+              </tr>
+              <!--row2-->
+              <tr class="table--body--content">
+                <td>2</td>
+                <td>05/08/2021</td>
+                <td>rec-000038</td>
+                <td>Alexander</td>
+                <td>30</td>
+                <td>Male</td>
+                <td>PHY--016</td>
+                <td>Dr.Bharath</td>
+                <td>10:30 AM</td>
+              </tr>
+              <!--row3-->
+              <tr class="table--body--content">
+                <td>3</td>
+                <td>05/08/2021</td>
+                <td>rec-000039</td>
+                <td>Divya</td>
+                <td>18</td>
+                <td>Female</td>
+                <td>PHY--017</td>
+                <td>Dr.Divya</td>
+                <td>11:30 AM</td>
+              </tr>
+              <!--row4-->
+              <tr class="table--body--content">
+                <td>4</td>
+                <td>05/08/2021</td>
+                <td>rec-000040</td>
+                <td>Akhil</td>
+                <td>26</td>
+                <td>Male</td>
+                <td>PHY--018</td>
+                <td>Dr.Mounika</td>
+                <td>11:30 AM</td>
+              </tr>
+              <!--row5-->
+              <tr class="table--body--content">
+                <td>5</td>
+                <td>05/08/2021</td>
+                <td>rec-000041</td>
+                <td>Sayeed</td>
+                <td>45</td>
+                <td>Male</td>
+                <td>PHY--015</td>
+                <td>Dr.Harsha Vardhan</td>
+                <td>11:00 AM</td>
+              </tr>
+              <!--row6-->
+              <tr class="table--body--content">
+                <td>6</td>
+                <td>05/08/2021</td>
+                <td>rec-000042</td>
+                <td>Thanvish</td>
+                <td>5</td>
+                <td>Male</td>
+                <td>PHY--020</td>
+                <td>Dr.Srinivasa Reddy</td>
+                <td>11:00 AM</td>
+              </tr>
+              <!--row7-->
+              <tr class="table--body--content">
+                <td>7</td>
+                <td>05/08/2021</td>
+                <td>rec-000043</td>
+                <td>Vidya</td>
+                <td>32</td>
+                <td>Female</td>
+                <td>PHY--017</td>
+                <td>Dr.Mounika</td>
+                <td>12:00 PM</td>
+              </tr>
+              <!--row8-->
+              <tr class="table--body--content">
+                <td>8</td>
+                <td>05/08/2021</td>
+                <td>rec-000044</td>
+                <td>Niharika</td>
+                <td>30</td>
+                <td>Female</td>
+                <td>PHY--019</td>
+                <td>Dr.Kushal</td>
+                <td>2:00 PM</td>
+              </tr>
+              <!--row9-->
+              <tr class="table--body--content">
+                <td>9</td>
+                <td>05/08/2021</td>
+                <td>rec-000045</td>
+                <td>Goyal Singh</td>
+                <td>38</td>
+                <td>Male</td>
+                <td>PHY--015</td>
+                <td>Dr.Harsha Vardan</td>
+                <td>2:00 PM</td>
+              </tr>
+              <!--row10-->
+              <tr class="table--body--content">
+                <td>10</td>
+                <td>05/08/2021</td>
+                <td>rec-000046</td>
+                <td>Srilekha</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>PHY--015</td>
+                <td>Dr.Harsha Vardan</td>
+                <td>2:30 PM</td>
+              </tr>
+              <!--row11-->
+              <tr class="table--body--content">
+                <td>11</td>
+                <td>05/08/2021</td>
+                <td>rec-000047</td>
+                <td>Mounika</td>
+                <td>26</td>
+                <td>Female</td>
+                <td>PHY--017</td>
+                <td>Dr.Divya</td>
+                <td>12:30 PM</td>
+              </tr>
+              <!--row12-->
+              <tr class="table--body--content">
+                <td>12</td>
+                <td>05/08/2021</td>
+                <td>rec-000048</td>
+                <td>Sneha</td>
+                <td>6</td>
+                <td>Female</td>
+                <td>PHY--020</td>
+                <td>Dr.Srinivasa Reddy</td>
+                <td>2:30 PM</td>
+              </tr>
+              <!--row13-->
+              <tr class="table--body--content">
+                <td>13</td>
+                <td>05/08/2021</td>
+                <td>rec-000049</td>
+                <td>Rithvik</td>
+                <td>6</td>
+                <td>Male</td>
+                <td>PHY--020</td>
+                <td>Dr.Srinivasa Reddy</td>
+                <td>3:00 PM</td>
+              </tr>
+              <!--row14-->
+              <tr class="table--body--content">
+                <td>14</td>
+                <td>05/08/2021</td>
+                <td>rec-000050</td>
+                <td>Shafiya</td>
+                <td>34</td>
+                <td>Female</td>
+                <td>PHY--015</td>
+                <td>Dr.Harsha Vardhan</td>
+                <td>3:00 PM</td>
+              </tr>
+              <!--row15-->
+              <tr class="table--body--content">
+                <td>15</td>
+                <td>05/08/2021</td>
+                <td>rec-000051</td>
+                <td>Vibhav Kulakarani</td>
+                <td>28</td>
+                <td>Male</td>
+                <td>PHY--015</td>
+                <td>Dr.Harsha Vardhan</td>
+                <td>4:00 PM</td>
+              </tr>
+              <!--row16-->
+              <tr class="table--body--content">
+                <td>16</td>
+                <td>05/08/2021</td>
+                <td>rec-000052</td>
+                <td>Mahesh</td>
+                <td>16</td>
+                <td>Male</td>
+                <td>PHY--019</td>
+                <td>Dr.Kushal</td>
+                <td>3:30 PM</td>
+              </tr>
+              <!--row17-->
+              <tr class="table--body--content">
+                <td>17</td>
+                <td>05/08/2021</td>
+                <td>rec-000053</td>
+                <td>Priyanka</td>
+                <td>17</td>
+                <td>Female</td>
+                <td>PHY--018</td>
+                <td>Dr.Mounika</td>
+                <td>3:00 PM</td>
+              </tr>
+              <!--row18-->
+              <tr class="table--body--content">
+                <td>18</td>
+                <td>05/08/2021</td>
+                <td>rec-000054</td>
+                <td>Akarsh</td>
+                <td>23</td>
+                <td>Male</td>
+                <td>PHY--016</td>
+                <td>Dr.Bharath</td>
+                <td>4:30 PM</td>
+              </tr>
+              <!--row19-->
+              <tr class="table--body--content">
+                <td>19</td>
+                <td>05/08/2021</td>
+                <td>rec-000055</td>
+                <td>Kishore</td>
+                <td>38</td>
+                <td>Male</td>
+                <td>PHY--016</td>
+                <td>Dr.Bharath</td>
+                <td>5:00 PM</td>
+              </tr>
+              <!--row20-->
+              <tr class="table--body--content">
+                <td>20</td>
+                <td>05/08/2021</td>
+                <td>rec-000056</td>
+                <td>Harshitha</td>
+                <td>25</td>
+                <td>Female</td>
+                <td>PHY--018</td>
+                <td>Dr.Mounika</td>
+                <td>5:00 PM</td>
+              </tr>
+              <!--row21-->
+              <tr class="table--body--content">
+                <td>21</td>
+                <td>05/08/2021</td>
+                <td>rec-000057</td>
+                <td>Sneha Varshini</td>
+                <td>13</td>
+                <td>Female</td>
+                <td>PHY--017</td>
+                <td>Dr.Divya</td>
+                <td>5:00 PM</td>
+              </tr>
+              <!--row22-->
+              <tr class="table--body--content">
+                <td>22</td>
+                <td>05/08/2021</td>
+                <td>rec-000058</td>
+                <td>Nagamani</td>
+                <td>29</td>
+                <td>Female</td>
+                <td>PHY--017</td>
+                <td>Dr.Divya</td>
+                <td>5:30 PM</td>
+              </tr>
+              <!--row23-->
+              <tr class="table--body--content">
+                <td>23</td>
+                <td>05/08/2021</td>
+                <td>rec-000059</td>
+                <td>Shankar</td>
+                <td>16</td>
+                <td>Male</td>
+                <td>PHY--019</td>
+                <td>Dr.Kushal</td>
+                <td>5:30 PM</td>
+              </tr>
+              <!--row24-->
+              <tr class="table--body--content">
+                <td>24</td>
+                <td>05/08/2021</td>
+                <td>rec-000060</td>
+                <td>Yashwanth</td>
+                <td>23</td>
+                <td>Male</td>
+                <td>PHY--015</td>
+                <td>Dr.Harsha Vardhan</td>
+                <td>6:30 PM</td>
+              </tr>
+              <!--row25-->
+              <tr class="table--body--content">
+                <td>25</td>
+                <td>05/08/2021</td>
+                <td>rec-000061</td>
+                <td>Sri</td>
+                <td>40</td>
+                <td>Male</td>
+                <td>PHY--015</td>
+                <td>Dr.Harsha Vardhan</td>
+                <td>7:00 PM</td>
+              </tr>
+              <!--row26-->
+              <tr class="table--body--content">
+                <td>26</td>
+                <td>05/08/2021</td>
+                <td>rec-000062</td>
+                <td>Sai Kiran</td>
+                <td>30</td>
+                <td>Male</td>
+                <td>PHY--016</td>
+                <td>Dr.Bharath</td>
+                <td>7:30 PM</td>
+              </tr>
+              <!--row27-->
+              <tr class="table--body--content">
+                <td>27</td>
+                <td>05/08/2021</td>
+                <td>rec-000063</td>
+                <td>Keerthika</td>
+                <td>11</td>
+                <td>Female</td>
+                <td>PHY--020</td>
+                <td>Dr.Srinivasa Reddy</td>
+                <td>7:00 PM</td>
+              </tr>
+              <!--row28-->
+              <tr class="table--body--content">
+                <td>28</td>
+                <td>05/08/2021</td>
+                <td>rec-000064</td>
+                <td>Sai Kiran</td>
+                <td>14</td>
+                <td>Male</td>
+                <td>PHY--020</td>
+                <td>Dr.Srinivasa Reddy</td>
+                <td>8:00 PM</td>
+              </tr>
+              <!--row29-->
+              <tr class="table--body--content">
+                <td>29</td>
+                <td>05/08/2021</td>
+                <td>rec-000065</td>
+                <td>Shareef</td>
+                <td>29</td>
+                <td>Male</td>
+                <td>PHY--016</td>
+                <td>Dr.Bharath</td>
+                <td>8:00 PM</td>
+              </tr>
+              <!--row30-->
+              <tr class="table--body--content">
+                <td>30</td>
+                <td>05/08/2021</td>
+                <td>rec-000066</td>
+                <td>Jonathan</td>
+                <td>25</td>
+                <td>Male</td>
+                <td>PHY--015</td>
+                <td>Dr.Harsha Vardhan</td>
+                <td>8:30 PM</td>
+              </tr>
+            </div>
+          </table>
+        </div>
+        <div class="col-sm-12">
+          <!--edit button-->
+          <a
+            href="list of patients.html"
+            target="blank"
+            class="btn btn-info mt-3"
+          >
+            Edit
+          </a>
+          <!--update button-->
+          <a
+            href="list of patients.html"
+            target="blank"
+            class="btn btn-info mt-3 ml-3"
+          >
+            Update
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--footer1-->
+    <div class="container-fluid">
+      <div class="row footer1 mt-3">
+        <!--footer left-->
+        <div class="col-sm-3 footer1--column1">
+          <h4>Patient care</h4>
+          <a href="#">Find a Doctor</a>
+          <a href="#">Medical Services</a>
+          <a href="#">Value added services</a>
+          <a href="#">Pay online</a>
+        </div>
+        <!--footer middle1-->
+        <div class="col-sm-3 footer1--column2">
+          <h4>Centers of Excellence</h4>
+          <a href="#">Neurology & Nuerosurgery</a>
+          <a href="#">Spine surgery</a>
+          <a href="#">Robotic surgery</a>
+          <a href="#">Cardiology</a>
+          <a href="#">Orthopaedics</a>
+          <a href="#">Organ Transplantation</a>
+          <a href="#">Emergency Care</a>
+        </div>
+        <!--footer middle2-->
+        <div class="col-sm-3 footer1--column3">
+          <h4>Medical Procedures</h4>
+          <a href="#">Treatment</a>
+          <a href="#">scan</a>
+          <a href="#">Surgery</a>
+          <a href="#">Bone marrow transplant</a>
+          <a href="#">Cosmetic and plastic</a>
+        </div>
+        <!--footer right-->
+        <div class="col-sm-3 footer1--column4">
+          <h4>Contact Us</h4>
+          <a href="#">Post A Query</a>
+          <a href="#">Book physical Appointment</a>
+          <a href="#">Give your feedback</a>
+        </div>
+      </div>
+    </div>
+    <!--footer2-->
+    <div class="container-fluid">
+      <div class="row footer2">
+        <div class="col-sm-4 footer2--icons">
+          <a href="https://www.facebook.com" target="blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.twitter.com" target="blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://www.instagram" target="blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com" target="blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+        <div class="col-sm-4 footer2--content">
+          <a href="#">Privacy policy</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col-sm-4 footer2--mail">
+          <a href="https://www.gmail.com">medicarehospitals@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

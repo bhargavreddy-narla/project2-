@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Single doctor page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2649fd799.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .navbar a {
+        margin-left: 5rem;
+      }
+      .jumbotron--heading1 {
+        color: blue;
+        text-align: center;
+        margin-top: 10rem;
+        font-size: 3rem;
+        font-style: italic;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .jumbotron--heading2 {
+        color: blue;
+        text-align: center;
+        font-size: 3rem;
+        font-style: italic;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .jumbotron--button {
+        margin-left: 8rem;
+      }
+      .body--firstDiv {
+        background-color: pink;
+      }
+      /*chatbot*/
+      .chatbot-heading {
+        color: #323f4b;
+        font-family: "Roboto";
+        font-size: 30px;
+      }
+
+      .image {
+        width: 150px;
+      }
+
+      .chat-container {
+        padding: 10px;
+      }
+
+      .msg-to-chatbot-container {
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .msg-to-chatbot {
+        background-color: pink;
+        font-family: "Roboto";
+        font-weight: 900;
+        border-radius: 16px;
+        padding: 10px;
+      }
+
+      .msg-from-chatbot-container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .msg-from-chatbot {
+        color: white;
+        background-color: #e57742;
+        font-family: "Roboto";
+        font-weight: 900;
+        border-radius: 16px;
+        padding: 10px;
+      }
+
+      .user-input {
+        background-color: #cbd2d9;
+        font-family: "Roboto";
+        font-weight: 900;
+        height: 52px;
+        border-width: 0;
+        border-radius: 5px;
+        margin: 8px;
+        padding: 15px;
+      }
+
+      .send-msg-btn {
+        background-color: skyblue;
+        font-family: "Roboto";
+        height: 52px;
+        border-width: 0;
+        border-radius: 10px;
+        margin: 8px;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      /*navbar*/
+    .navbar-brand a h4,
+      h5 {
+        color: red;
+        margin-top: -1rem;
+      }
+      .nav-item a {
+        margin-left: 3rem;
+      }
+
+      .search--bar {
+        margin-left: 4rem;
+      }
+      button {
+        margin-left: -1rem;
+      }
+
+      .header--first {
+        border: 1px solid grey;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        border-radius: 20px;
+      }
+      .body--form {
+        border: 1px solid black;
+        padding: 1rem;
+        background-color: #fbeee6;
+        border-radius: 10px;
+      }
+
+      .btn-success {
+        width: 20rem;
+        font-weight: bold;
+        margin-left: 8rem;
+        border-radius: 12px;
+      }
+      h6 {
+        margin-left: 16rem;
+        margin-top: 1rem;
+        font-size: 16px;
+      }
+      .btn-danger {
+        width: 20rem;
+        font-weight: bold;
+        margin-left: 8rem;
+        margin-top: 1rem;
+        border-radius: 12px;
+      }
+
+      /*footer*/
+      .footer1 {
+        background-color: black;
+      }
+      .footer1 h4 {
+        color: #edbb99;
+      }
+
+      .footer1--column1 a {
+        color: white;
+        display: block;
+        text-decoration: none;
+      }
+      .footer1--column1 a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+      .footer1--column2 a {
+        color: white;
+        display: block;
+        text-decoration: none;
+      }
+      .footer1--column2 a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+      .footer1--column3 a {
+        color: white;
+        display: block;
+        text-decoration: none;
+      }
+      .footer1--column3 a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+      .footer1--column4 a {
+        color: white;
+        display: block;
+        text-decoration: none;
+      }
+      .footer1--column4 a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+
+      .footer2 {
+        background-color: skyblue;
+      }
+      .footer2--icons a {
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        float: left;
+        text-decoration: none;
+      }
+      .footer2--icons a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+      .footer2--content a {
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        float: left;
+        text-decoration: none;
+      }
+      .footer2--content a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+
+      .footer2--mail a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+        float: right;
+      }
+      .footer2--mail a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar starts-->
+    <div class="container-fixed">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="bar">
+          <a class="navbar-brand" href="#"><h4>Medicare<br><h5>Hospitals</h5></h4></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--search bar-->
+              <form class="form-inline search--bar">
+                <input
+                  type="text"
+                  name=""
+                  value=""
+                  class="form-control"
+                  placeholder="Search"
+                />
+                <button type="submit" class="btn btn-secondary">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+               <!--search bar ends-->
+              <!--home-->
+              <li class="nav-item active">
+                <a class="nav-link" href="#" id="nav">HOME</a>
+              </li>
+              <!--home ends-->
+              <!--about-->
+              <li class="nav-item ">
+                  <a class="nav-link" href="#" id="nav">ABOUT US</a>
+                </li>
+              <!--about end-->
+              <!--contact-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="nav">CONTACT US</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" target="blank">Post a Query</a>
+                  <a class="dropdown-item" href="#" target="blank">Book Physical Appointment</a>
+                </div>
+              </li>
+            <!--contact ends-->
+             <!--Doctor-->
+             <li class="nav-item">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                     href="#" role="button" id="nav">
+                     DOCTOR </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="list of patients.html" target="blank">List of patients</a>
+                    <a class="dropdown-item" href="my patients.html" target="blank">My Patients</a>
+                    <a class="dropdown-item" href="add new patient.html" target="blank">Add new patient</a>
+                  </div>
+                </li>
+          </li>
+          <!--Doctor ends-->
+          <!--patient-->
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="#" role="button" id="nav">
+                   PATIENT </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="list of doctors.html" target="blank">List of Doctors</a>
+                  <a class="dropdown-item" href="shortlisted doctors.html" target="blank">Shortlisted Doctors</a>
+                  <a class="dropdown-item" href="single doctor page.html" target="blank">Single Doctor</a>
+                </div>
+              </li>
+        </li>
+        <!--patients ends-->
+              <!--login-->
+              <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         href="#" role="button" aria-haspopup="true" aria-expanded="false" id="nav">
+                         SIGN IN</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Doctor sign in.html" target="blank">Doctor</a>
+                        <a class="dropdown-item" href="patient login.html" target="blank">Patient</a>
+                      </div>
+                    </li>
+              </li>
+              <!--login ends-->
+              <!--sign up-->
+              <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         href="#" role="button" id="nav">
+                         SIGN UP </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Doctor sign up.html" target="blank">Doctor</a>
+                        <a class="dropdown-item" href="patient signup page.html" target="blank">Patient</a>
+                      </div>
+                    </li>
+              </li>
+              <!--sign-up ends-->
+            </ul> 
+          </div>
+        </nav>
+        <!--navbar--ends-->
+    <div class="container">
+      <div class="row">
+        <!--jumbotron starts-->
+        <div class="col-sm-6 jumbotron mt-5">
+          <!--headings-->
+          <h1 class="jumbotron--heading1">Dr.Harsha Vardhan</h1>
+          <h2 class="jumbotron--heading2">Neurologist</h2>
+          <!--headings button-->
+          <a
+            href="stylesheet/book appointment.html"
+            target="blank"
+            class="btn btn-primary mt-3 jumbotron--button"
+            >Book an Appointment</a
+          >
+        </div>
+        <div class="col-sm-6 jumbotron--img">
+          <img
+            src="https://media.istockphoto.com/photos/indian-male-doctor-picture-id177373093?k=6&m=177373093&s=612x612&w=0&h=_NNYxA7b2YR3MsxSs3s7sL4f-S5Ks-2l3ijbR1hv1wU="
+          />
+        </div>
+        <!--jumbotron ends-->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!--firstdiv starts-->
+        <div class="col-sm-12 body--firstDiv mt-3">
+          <h3>Neurology?</h3>
+          <p>
+            Neurologists treat an ever-growing variety of conditions affecting
+            <strong>the central and peripheral nervous systems</strong>. These
+            include diseases such as
+            <strong
+              >stroke, epilepsy, Lou Gehrig’s disease, multiple sclerosis,
+              Alzheimer disease, Parkinson disease, brain tumors, and countless
+              others</strong
+            >.
+          </p>
+          <p>
+            Neurologists are essential in the care of diverse conditions with a
+            wide array of treatments. Even though we are all neurologists, our
+            subspecialty and lifestyle preferences can make a huge difference in
+            what our daily lives look like. And neurology is more diverse than
+            ever before.
+          </p>
+          <a
+            href="https://www.wikipedia.com"
+            target="blank"
+            class="btn btn-primary mb-3"
+            >Know more</a
+          >
+        </div>
+        <!--firstdiv ends-->
+      </div>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <!--seconddiv img starts-->
+        <div class="col-sm-6 body--secondDiv--img mt-3">
+          <img
+            src="https://wp02-media.cdn.ihealthspot.com/wp-content/uploads/sites/520/2020/04/08160759/iStock-1168179082.jpg"
+            height="500px"
+            width="100%"
+          />
+        </div>
+        <!--seconddiv img ends-->
+        <!--seconddiv content starts-->
+        <div class="col-sm-6 body--secondDiv--content mt-3">
+          <h1>What is a Stroke?</h1>
+          <p>
+            A stroke occurs when a blood vessel in the brain ruptures and
+            bleeds, or when there’s a blockage in the blood supply to the brain.
+            The rupture or blockage prevents blood and oxygen from reaching the
+            brain’s tissues.
+          </p>
+          <h3 class="mt-3">Stroke symptoms</h3>
+          <p>
+            The loss of blood flow to the brain damages tissues within the
+            brain. Symptoms of a stroke show up in the body parts controlled by
+            the damaged areas of the brain.
+          </p>
+          <h3>Stroke signs</h3>
+          <ul style="list-style-type: none;">
+            <li><a href="#">paralysis</a></li>
+            <li><a href="#">trouble speaking or understanding speech</a></li>
+            <li>
+              <a href="#">
+                numbness or weakness in the arm, face, and leg, especially on
+                one side of the body</a
+              >
+            </li>
+            <li><a href="#">confusion</a></li>
+            <li><a href="#">slurring speech</a></li>
+            <li><a href="#">trouble walking</a></li>
+            <li><a href="#">loss of balance or coordination</a></li>
+            <li>
+              <a href="#">severe, sudden headache with an unknown cause</a>
+            </li>
+            <li><a href="#">dizziness</a></li>
+          </ul>
+          <a
+            href="https://www.wikipedia.com"
+            target="blank"
+            class="btn btn-primary mb-3"
+            >Know more</a
+          >
+        </div>
+        <!--seconddiv content ends-->
+      </div>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <!--thirddiv content starts-->
+        <div class="col-sm-6 body--thirdDiv--content mt-3">
+          <h2>What is multiple sclerosis?</h2>
+          <p>
+            Multiple sclerosis (MS) is a chronic condition involving your
+            central nervous system (CNS). With MS, your immune system attacks
+            myelin, which is the protective layer around nerve fibers.
+          </p>
+          <p>
+            MS causes inflammation and temporary lesions. It can also lead to
+            lasting lesions caused by scar tissue, which can make it hard for
+            your brain to send signals to the rest of your body.
+          </p>
+          <h3>Symptoms?</h3>
+          <ul style="list-style-type: none;">
+            <li><a href="#">Fatigue</a></li>
+            <li><a href="#">Difficult walking</a></li>
+            <li><a href="#">Vision Problems</a></li>
+            <li><a href="#">Speech issues</a></li>
+            <li><a href="#">Chronic pain</a></li>
+            <li><a href="#">Tremors</a></li>
+            <li><a href="#">Problems with bladder control</a></li>
+          </ul>
+          <a
+            href="https://www.wikipedia.com"
+            target="blank"
+            class="btn btn-primary mb-3"
+            >Know more</a
+          >
+        </div>
+        <!--thirddiv content ends-->
+        <!--thirddiv im starts-->
+        <div class="col-sm-6 body--thirdDiv--img mt-3">
+          <img
+            src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/ms_overview_slideshow/493x335_ms_overview_slideshow.jpg?resize=400px:*&output-quality=50"
+            height="400px"
+            width="100%"
+          />
+        </div>
+        <!--thirddiv img ends-->
+      </div>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <!--fourthdiv img starts-->
+        <div class="col-sm-6 body--foruthDiv--img mt-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf9GC6_HHNb3vLyoH6PoW6TQYpggRe61d9hQ&usqp=CAU"
+            width="100%"
+            height="350px"
+          />
+        </div>
+        <!--fourthdiv img ends-->
+        <!--fourthdiv content starts-->
+        <div class="col-sm-6 body--fourthDiv--content mt-3">
+          <h2>What is Headache?</h2>
+          <p>
+            Cluster headaches are severely painful headaches that occur in
+            clusters. You experience cycles of headache attacks, followed by
+            headache-free periods.
+          </p>
+          <p>
+            The frequency of your headaches during these cycles may range from
+            one headache every other day to several headaches per day. Pain from
+            cluster headaches can be extremely severe.
+          </p>
+          <h3>Symptoms</h3>
+          <ul style="list-style-type: none;">
+            <li><a href="#">a droopy eyelid</a></li>
+            <li><a href="#">a constricted pupil</a></li>
+            <li><a href="#">eye redness</a></li>
+            <li><a href="#">facial redness or flushing</a></li>
+            <li><a href="#">a runny nose or stuffy nose</a></li>
+          </ul>
+          <a
+            href="https://www.wikipedia.com"
+            target="blank"
+            class="btn btn-primary mb-3"
+            >Know more</a
+          >
+        </div>
+        <!--fourthdiv content ends-->
+      </div>
+      <hr />
+    </div>
+    <!--chatbot starts-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-center chatbot-heading">Chatbot</h1>
+          <div class="chat-container" id="chatContainer"></div>
+          <div class="d-flex flex-row justify-content-end">
+            <img
+              class="image"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/chatbot-boy-img.png"
+            />
+          </div>
+          <div class="d-flex flex-row justify-content-center fixed-bottom">
+            <input class="user-input" id="userInput" />
+            <button class="send-msg-btn" id="sendMsgBtn" onclick="sendMsgBtn()">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--chatbot ends-->
+    <!-- chatbot javascript starts-->
+    <script type="text/javascript">
+      let chatbotMsgList = [
+        "Hi",
+        "Hey",
+        "How can I help you?",
+        "Need an Appointment",
+        "Consult A Doctor",
+        "Thank You",
+      ];
+      let userInputE1 = document.getElementById("userInput");
+
+      let chatContainerE1 = document.getElementById("chatContainer");
+
+      function sendMsgBtn() {
+        let messageContainerE2 = document.createElement("div");
+        messageContainerE2.classList.add("msg-to-chatbot-container");
+        chatContainerE1.appendChild(messageContainerE2);
+
+        let paragraphE1 = document.createElement("span");
+        paragraphE1.textContent = userInputE1.value;
+        paragraphE1.classList.add("msg-to-chatbot");
+        messageContainerE2.appendChild(paragraphE1);
+        userInputE1.value = "";
+        getReplyfromChatBot();
+      }
+
+      function getReplyfromChatBot() {
+        let noOfChatBotMsgs = chatbotMsgList.length;
+        let chatBotContet =
+          chatbotMsgList[Math.ceil(Math.random() * noOfChatBotMsgs) - 1];
+
+        let messageContainerE1 = document.createElement("div");
+        messageContainerE1.classList.add("msg-from-chatbot-container");
+        chatContainerE1.appendChild(messageContainerE1);
+
+        let paragraphE2 = document.createElement("span");
+        paragraphE2.textContent = chatBotContet;
+        paragraphE2.classList.add("msg-from-chatbot");
+        messageContainerE1.appendChild(paragraphE2);
+      }
+    </script>
+    <!--chatbot javascript ends-->
+
+    <!--footer1-->
+    <div class="container-fluid">
+      <div class="row footer1 mt-3">
+        <!--footer left-->
+        <div class="col-sm-3 footer1--column1">
+          <h4>Patient care</h4>
+          <a href="#">Find a Doctor</a>
+          <a href="#">Medical Services</a>
+          <a href="#">Value added services</a>
+          <a href="#">Pay online</a>
+        </div>
+        <!--footer middle1-->
+        <div class="col-sm-3 footer1--column2">
+          <h4>Centers of Excellence</h4>
+          <a href="#">Neurology & Nuerosurgery</a>
+          <a href="#">Spine surgery</a>
+          <a href="#">Robotic surgery</a>
+          <a href="#">Cardiology</a>
+          <a href="#">Orthopaedics</a>
+          <a href="#">Organ Transplantation</a>
+          <a href="#">Emergency Care</a>
+        </div>
+        <!--footer middle2-->
+        <div class="col-sm-3 footer1--column3">
+          <h4>Medical Procedures</h4>
+          <a href="#">Treatment</a>
+          <a href="#">scan</a>
+          <a href="#">Surgery</a>
+          <a href="#">Bone marrow transplant</a>
+          <a href="#">Cosmetic and plastic</a>
+        </div>
+        <!--footer right-->
+        <div class="col-sm-3 footer1--column4">
+          <h4>Contact Us</h4>
+          <a href="#">Post A Query</a>
+          <a href="#">Book physical Appointment</a>
+          <a href="#">Give your feedback</a>
+        </div>
+      </div>
+    </div>
+    <!--footer2-->
+    <div class="container-fluid">
+      <div class="row footer2">
+        <div class="col-sm-4 footer2--icons">
+          <a href="https://www.facebook.com" target="blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.twitter.com" target="blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://www.instagram" target="blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com" target="blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+        <div class="col-sm-4 footer2--content">
+          <a href="#">Privacy policy</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col-sm-4 footer2--mail">
+          <a href="https://www.gmail.com">medicarehospitals@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  border: none;
+  background-color: skyblue;
+}
+
+.header--leftMedia h6,
+a {
+  display: inline-block;
+}
+.header--leftMedia h6 {
+  color: white;
+}
+.header--leftMedia a {
+  margin-left: 2rem;
+  color: white;
+}
+
+.header--rightMedia a {
+  margin-right: 5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-brand a h4,
+h5 {
+  color: red;
+  margin-top: -1rem;
+}
+.nav-item a {
+  margin-left: 3rem;
+}
+
+.search--bar {
+  margin-left: 4rem;
+}
+button {
+  margin-left: -1rem;
+}
+
+.carousel {
+  border: none;
+}
+.carousel img {
+  padding: 0 2rem 0 2rem;
+}
+.navbar2 {
+  border: none;
+  padding: 1rem;
+  background-color: #fdf2e9;
+}
+.navbar2--buttons a {
+  margin-left: 5rem;
+}
+
+.aboutHospital--details h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.doctor1--details {
+  background-color: #d4e6f1;
+}
+.doctor1--details h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.doctor1--details h4 {
+  font-size: 2rem;
+}
+.doctor1--details li {
+  list-style-type: none;
+}
+
+.doctor2--details {
+  background-color: #fcf3cf;
+}
+.doctor2--details h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.doctor2--details h4 {
+  font-size: 2rem;
+}
+.doctor2--details li {
+  list-style-type: none;
+}
+
+.doctor3--details {
+  background-color: #e9f7ef;
+}
+.doctor3--details h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.doctor3--details h4 {
+  font-size: 2rem;
+}
+.doctor3--details li {
+  list-style-type: none;
+}
+
+.hospitalLocation--content li {
+  list-style-type: none;
+}
+.hospitalLocation--content a {
+  border: none;
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.transplant--recruitment {
+  background-color: #d5d8dc;
+}
+.transplant--content h2 {
+  color: chocolate;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.recruitment--content h2 {
+  color: mediumslateblue;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*chatbot*/
+.chatbot-heading {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 30px;
+}
+
+.image {
+  width: 150px;
+}
+
+.chat-container {
+  padding: 10px;
+}
+
+.msg-to-chatbot-container {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.msg-to-chatbot {
+  background-color: pink;
+  font-family: "Roboto";
+  font-weight: 900;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.msg-from-chatbot-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.msg-from-chatbot {
+  color: white;
+  background-color: #e57742;
+  font-family: "Roboto";
+  font-weight: 900;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.user-input {
+  background-color: #cbd2d9;
+  font-family: "Roboto";
+  font-weight: 900;
+  height: 52px;
+  border-width: 0;
+  border-radius: 5px;
+  margin: 8px;
+  padding: 15px;
+}
+
+.send-msg-btn {
+  background-color: skyblue;
+  font-family: "Roboto";
+  height: 52px;
+  border-width: 0;
+  border-radius: 10px;
+  margin: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.footer1 {
+  background-color: black;
+}
+.footer1 h4 {
+  color: #edbb99;
+}
+
+.footer1--column1 a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.footer1--column1 a:hover {
+  color: blue;
+  text-decoration: none;
+}
+.footer1--column2 a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.footer1--column2 a:hover {
+  color: blue;
+  text-decoration: none;
+}
+.footer1--column3 a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.footer1--column3 a:hover {
+  color: blue;
+  text-decoration: none;
+}
+.footer1--column4 a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.footer1--column4 a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.footer2 {
+  background-color: skyblue;
+}
+.footer2--icons a {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.footer2--icons a:hover {
+  color: blue;
+  text-decoration: none;
+}
+.footer2--content a {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.footer2--content a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.footer2--mail a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  float: right;
+}
+.footer2--mail a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    width: 100%;
+  }
+  .header--leftMedia a {
+    margin-left: 0.5rem;
+    color: white;
+  }
+  .header--rightMedia a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  .carousel img {
+    height: 15rem;
+  }
+  .nav-item a {
+    margin-left: 1rem;
+  }
+  .navbar2 {
+    border: none;
+    padding: 2rem;
+    background-color: #fdf2e9;
+  }
+  .navbar2--buttons a {
+    margin-left: 5rem;
+  }
+
+  .hospitalLocation--content iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 140%;
+  }
+  .header--leftMedia a {
+    margin-left: 1rem;
+    color: white;
+  }
+  .header--rightMedia a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar-brand a h4,
+  h5 {
+    color: red;
+    margin-top: -1rem;
+  }
+  .nav-item a {
+    margin-left: 0.2rem;
+  }
+
+  .search--bar {
+    margin-left: 0.2rem;
+  }
+  button {
+    margin-left: -1rem;
+  }
+  .hospitalLocation--content iframe {
+    width: 100%;
+  }
+}
+/*
+@media screen and (min-width: 1200px) {
+  body {
+    width: 100%;
+  }
+  .header--leftMedia a {
+    margin-left: 1rem;
+    color: white;
+  }
+  .header--rightMedia a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar-brand a h4,
+  h5 {
+    color: red;
+    margin-top: -1rem;
+  }
+  .nav-item a {
+    margin-left: 0.5rem;
+  }
+
+  .search--bar {
+    margin-left: 1rem;
+  }
+  button {
+    margin-left: -1rem;
+  }
+  .hospitalLocation--content iframe {
+    width: 100%;
+  }
+}*/

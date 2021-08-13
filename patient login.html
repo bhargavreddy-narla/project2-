@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>patient sign in</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2649fd799.js"
+      crossorigin="anonymous"
+    ></script>
+    <style type="text/css">
+      body {
+        background-color: #b2dfdb;
+      }
+      .header--sign {
+        border: none;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        border-radius: 20px;
+      }
+      .body--form {
+        border: 1px solid grey;
+        padding: 1rem;
+        background-color: #f8bbd0;
+        border-radius: 10px;
+        margin-top: 3rem;
+      }
+      .body--form a:hover {
+        text-decoration: none;
+      }
+       /*navbar*/
+       .navbar-brand a h4,h5{
+           color:red;
+           margin-top: -1rem;
+           
+       }
+      .nav-item  a{
+          margin-left: 3rem;
+      }
+
+      .search--bar{
+        margin-left: 4rem;
+      }
+      button{
+        margin-left: -1rem;
+      }
+      /*footer*/
+      .footer1 {
+       background-color: black;
+      }
+      .footer1 h4 {
+      color: #edbb99;
+     }
+
+     .footer1--column1 a {
+     color: white;
+     display: block;
+     text-decoration: none;
+     }
+     .footer1--column1 a:hover {
+      color: blue;
+     text-decoration: none;
+     }
+    .footer1--column2 a {
+     color: white;
+     display: block;
+     text-decoration: none;
+    }
+     .footer1--column2 a:hover {
+     color: blue;
+     text-decoration: none;
+    }
+    .footer1--column3 a {
+     color: white;
+     display: block;
+    text-decoration: none;
+    }
+    .footer1--column3 a:hover {
+     color: blue;
+     text-decoration: none;
+    }
+    .footer1--column4 a {
+     color: white;
+     display: block;
+     text-decoration: none;
+    }
+    .footer1--column4 a:hover {
+     color: blue;
+     text-decoration: none;
+    }
+
+     .footer2 {
+     background-color: skyblue;
+    }
+     .footer2--icons a {
+     color: white;
+    padding:1rem;
+    text-align:center;
+    float: left;
+    text-decoration: none;
+    }
+    .footer2--icons a:hover {
+     color: blue;
+    text-decoration: none;
+    }
+    .footer2--content a {
+     color: white;
+     padding: 1rem;
+     text-align: center;
+     float: left;
+     text-decoration: none;
+    }
+    .footer2--content a:hover {
+     color: blue;
+     text-decoration: none;
+    }
+
+    .footer2--mail a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding: 1rem;
+      float: right;
+     }
+     .footer2--mail a:hover {
+    color: blue;
+     text-decoration: none;
+    }
+      @media screen and (max-width: 900px) {
+        body {
+          background-color: powderblue;
+        }
+        form {
+          background-color: pink;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar starts-->
+    <div class="container-fixed">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="bar">
+          <a class="navbar-brand" href="#"><h4>Medicare<br><h5>Hospitals</h5></h4></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--search bar-->
+              <form class="form-inline search--bar">
+                <input
+                  type="text"
+                  name=""
+                  value=""
+                  class="form-control"
+                  placeholder="Search"
+                />
+                <button type="submit" class="btn btn-secondary">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+               <!--search bar ends-->
+              <!--home-->
+              <li class="nav-item active">
+                <a class="nav-link" href="#" id="nav">HOME</a>
+              </li>
+              <!--home ends-->
+              <!--about-->
+              <li class="nav-item ">
+                  <a class="nav-link" href="#" id="nav">ABOUT US</a>
+                </li>
+              <!--about end-->
+              <!--contact-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="nav">CONTACT US</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" target="blank">Post a Query</a>
+                  <a class="dropdown-item" href="#" target="blank">Book Physical Appointment</a>
+                </div>
+              </li>
+            <!--contact ends-->
+            <!--Doctor-->
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                     href="#" role="button" id="nav">
+                     DOCTOR </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="list of patients.html" target="blank">List of patients</a>
+                    <a class="dropdown-item" href="my patients.html" target="blank">My Patients</a>
+                    <a class="dropdown-item" href="add new patient.html" target="blank">Add new patient</a>
+                  </div>
+                </li>
+          </li>
+          <!--Doctor ends-->
+          <!--patient-->
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="#" role="button" id="nav">
+                   PATIENT </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="list of doctors.html" target="blank">List of Doctors</a>
+                  <a class="dropdown-item" href="shortlisted doctors.html" target="blank">Shortlisted Doctors</a>
+                  <a class="dropdown-item" href="single doctor page.html" target="blank">Single Doctor</a>
+                </div>
+              </li>
+        </li>
+            <!--patients ends-->
+             <!--login-->
+              <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         href="#" role="button" aria-haspopup="true" aria-expanded="false" id="nav">
+                         SIGN IN</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Doctor sign in.html" target="blank">Doctor</a>
+                        <a class="dropdown-item" href="patient login.html" target="blank">Patient</a>
+                      </div>
+                    </li>
+              </li>
+              <!--login ends-->
+              <!--sign up-->
+              <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         href="#" role="button" id="nav">
+                         SIGN UP </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Doctor sign up.html" target="blank">Doctor</a>
+                        <a class="dropdown-item" href="patient signup page.html" target="blank">Patient</a>
+                      </div>
+                    </li>
+              </li>
+              <!--sign-up ends-->
+            </ul> 
+          </div>
+        </nav>
+        <!--navbar--ends-->
+        <!--patient heading-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 mt-5">
+          <!--header-->
+          <h1 style="text-align: center" class="header--sign">
+            Patient Sign in
+          </h1>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+    <!--form-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 body--form">
+          <form>
+            <!--email-->
+            <fieldset>
+              <input
+                type="email"
+                name=""
+                value=""
+                placeholder="Email address (required)"
+                class="form-control mt-3"
+              />
+            </fieldset>
+            <fieldset>
+              <!--password-->
+              <input
+                type="password"
+                name=""
+                value=""
+                placeholder="Password (required)"
+                required;
+                class="form-control mt-3"
+              />
+            </fieldset>
+            <!--checkbox-->
+            <input type="checkbox" class="mt-3" /> Keep me signin
+            <!--forgot password-->
+            <a
+              href="password mail.html"
+              target="blank"
+              style="float: right"
+              class="mt-3"
+            >
+              Forgot password?</a
+            >
+            <!--signin button-->
+            <a href="#" type="button" class="btn btn-primary mt-5 form-control">
+              Sign In
+            </a>
+            <h6 style="text-align: center" class="mt-3">OR</h6>
+            <!--google button-->
+            <a href="https://www.gmail.com" target="blank" type="button" class="btn btn-danger mt-3 form-control">
+              Sign In with Google
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+     <!--footer1-->
+     <div class="container-fluid">
+      <div class="row footer1 mt-3">
+        <!--footer left-->
+        <div class="col-sm-3 footer1--column1">
+          <h4>Patient care</h4>
+          <a href="#">Find a Doctor</a>
+          <a href="#">Medical Services</a>
+          <a href="#">Value added services</a>
+          <a href="#">Pay online</a>
+        </div>
+        <!--footer middle1-->
+        <div class="col-sm-3 footer1--column2">
+          <h4>Centers of Excellence</h4>
+          <a href="#">Neurology & Nuerosurgery</a>
+          <a href="#">Spine surgery</a>
+          <a href="#">Robotic surgery</a>
+          <a href="#">Cardiology</a>
+          <a href="#">Orthopaedics</a>
+          <a href="#">Organ Transplantation</a>
+          <a href="#">Emergency Care</a>
+        </div>
+        <!--footer middle2-->
+        <div class="col-sm-3 footer1--column3">
+          <h4>Medical Procedures</h4>
+          <a href="#">Treatment</a>
+          <a href="#">scan</a>
+          <a href="#">Surgery</a>
+          <a href="#">Bone marrow transplant</a>
+          <a href="#">Cosmetic and plastic</a>
+        </div>
+        <!--footer right-->
+        <div class="col-sm-3 footer1--column4">
+          <h4>Contact Us</h4>
+          <a href="#">Post A Query</a>
+          <a href="#">Book physical Appointment</a>
+          <a href="#">Give your feedback</a>
+        </div>
+      </div>
+    </div>
+    <!--footer2-->
+    <div class="container-fluid">
+      <div class="row footer2">
+        <div class="col-sm-4 footer2--icons">
+          <a href="https://www.facebook.com" target="blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.twitter.com" target="blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://www.instagram" target="blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com" target="blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+        <div class="col-sm-4 footer2--content">
+          <a href="#">Privacy policy</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col-sm-4 footer2--mail">
+          <a href="https://www.gmail.com">medicarehospitals@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
